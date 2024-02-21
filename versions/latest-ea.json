@@ -1,6 +1,6 @@
 {
     "version": "22.0.0-ea.05",
-    "download_base_url": "https://github.com/graalvm/oracle-graalvm-dev-builds/releases/download/jdk-22.0.0-ea.05/",
+    "download_base_url": "https://github.com/graalvm/oracle-graalvm-ea-builds/releases/download/jdk-22.0.0-ea.05/",
     "files": [
         {
             "filename": "graalvm-jdk-22.0.0-ea.05_linux-aarch64_bin.tar.gz",
