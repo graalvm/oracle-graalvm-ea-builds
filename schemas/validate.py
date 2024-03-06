@@ -56,9 +56,7 @@ def check_urls_exist(download_base_url, files):
 
 if __name__ == '__main__':
     for file_name in os.listdir('versions'):
-        assert file_name.endswith('.json'), 'Unexpected file'
-        
+        assert file_name.endswith('.json'), f"Unexpected non-JSON file '{file_name}'"
         schema_name = LATEST_EA_SCHEMA if file_name == LATEST_EA_JSON else GENERIC_EA_SCHEMA
         validate(file_name, schema_name)
-
     print('JSON validation successful')
