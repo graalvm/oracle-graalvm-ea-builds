@@ -1,0 +1,61 @@
+{
+    "$schema": "https://json-schema.org/draft/2019-09/schema",
+    "$id": "https://github.com/graalvm/oracle-graalvm-ea-builds/blob/main/schemas/generic-ea-schema.json",
+    "title": "Generic Schema for Oracle GraalVM Early Access Builds",
+    "type": "array",
+    "items": {
+        "title": "List of EA builds",
+        "type": "object",
+        "required": [
+            "version",
+            "latest",
+            "download_base_url",
+            "files"
+        ],
+        "additionalProperties": false,
+        "properties": {
+            "version": {
+                "title": "The version of an EA build",
+                "type": "string"
+            },
+            "latest": {
+                "title": "Whether this is the latest EA build for this release train",
+                "type": "boolean"
+            },
+            "download_base_url": {
+                "title": "The base URL for downloading an EA build",
+                "type": "string"
+            },
+            "files": {
+                "title": "The files of an EA build",
+                "type": "array",
+                "items": {
+                    "title": "A file of an EA build",
+                    "type": "object",
+                    "required": [
+                        "filename",
+                        "arch",
+                        "platform"
+                    ],
+                    "additionalProperties": false,
+                    "properties": {
+                        "filename": {
+                            "title": "The name of an EA build file",
+                            "type": "string"
+                        },
+                        "arch": {
+                            "enum": ["aarch64", "x64"],
+                            "title": "The architecture of an EA build file",
+                            "type": "string"
+                        },
+                        "platform": {
+                            "enum": ["darwin", "linux", "windows"],
+                            "title": "The platform of an EA build file",
+                            "type": "string"
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
