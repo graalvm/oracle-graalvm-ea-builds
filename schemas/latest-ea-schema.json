@@ -1,0 +1,52 @@
+{
+    "$schema": "https://json-schema.org/draft/2019-09/schema",
+    "$id": "https://github.com/graalvm/oracle-graalvm-ea-builds/blob/main/schemas/latest-ea-schema.json",
+    "title": "Schema for Latest Oracle GraalVM Early Access Build",
+    "type": "object",
+    "required": [
+        "version",
+        "download_base_url",
+        "files"
+    ],
+    "additionalProperties": false,
+    "properties": {
+        "version": {
+            "title": "The version of the latest EA build",
+            "type": "string"
+        },
+        "download_base_url": {
+            "title": "The base URL for downloading the latest EA build",
+            "type": "string"
+        },
+        "files": {
+            "title": "The files of the latest EA build",
+            "type": "array",
+            "items": {
+                "title": "A file of the latest EA build",
+                "type": "object",
+                "required": [
+                    "filename",
+                    "arch",
+                    "platform"
+                ],
+                "additionalProperties": false,
+                "properties": {
+                    "filename": {
+                        "title": "The name of a file of the latest EA build",
+                        "type": "string"
+                    },
+                    "arch": {
+                        "enum": ["aarch64", "x64"],
+                        "title": "The architecture of a file of the latest EA build",
+                        "type": "string"
+                    },
+                    "platform": {
+                        "enum": ["darwin", "linux", "windows"],
+                        "title": "The platform of a file of the latest EA build",
+                        "type": "string"
+                    }
+                }
+            }
+        }
+    }
+}
