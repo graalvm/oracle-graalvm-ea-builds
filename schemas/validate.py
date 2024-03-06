@@ -46,11 +46,12 @@ def validate_builds(builds):
 
 def check_urls_exist(download_base_url, files):
     for file in files:
-        download_url = f'{download_base_url}{file["filename"]}'
-        print(f"  Checking '{download_url}'...")
-        request = urllib.request.Request(download_url, method='HEAD')
-        response = urllib.request.urlopen(request)
-        assert response.status == 200, f"Expected status code of 200, got {response.status} for '{download_url}'"
+        for extension in ['', '.sha256']:
+            download_url = f'{download_base_url}{file["filename"]}{extension}'
+            print(f"  Checking '{download_url}'...")
+            request = urllib.request.Request(download_url, method='HEAD')
+            response = urllib.request.urlopen(request)
+            assert response.status == 200, f"Expected status code of 200, got {response.status} for '{download_url}'"
 
 
 if __name__ == '__main__':
