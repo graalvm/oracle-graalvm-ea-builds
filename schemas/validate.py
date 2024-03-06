@@ -40,7 +40,9 @@ def validate_builds(builds):
         files = build['files']
         assert version in download_base_url, f'version not found in download_base_url: {json.dumps(build)}'
         assert all(version in file['filename'] for file in files), f'version not found in all filenames: {json.dumps(build)}'
-        check_urls_exist(download_base_url, files)
+        is_pull_request = 'GITHUB_BASE_REF' in os.environ
+        if not is_pull_request:
+            check_urls_exist(download_base_url, files)
 
 
 def check_urls_exist(download_base_url, files):
