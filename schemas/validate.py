@@ -2,7 +2,7 @@ import json
 import os
 import urllib.request
 from jsonschema import validate as json_validate
-from multiprocessing.pool import Pool
+from multiprocessing.dummy import Pool as ThreadPool
 
 
 GENERIC_EA_SCHEMA = 'generic-ea-schema.json'
@@ -46,7 +46,7 @@ def validate_builds(builds):
 
 
 def check_urls_exist(download_base_url, files):
-    with Pool() as pool:
+    with ThreadPool() as pool:
         download_urls = [f'{download_base_url}{file["filename"]}{extension}' for extension in ['', '.sha256'] for file in files]
         pool.map(check_url_exists, download_urls)
 
