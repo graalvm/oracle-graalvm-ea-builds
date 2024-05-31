@@ -1,0 +1,31 @@
+name: Set up GraalVM JDK EA build
+description: 'Set up GraalVM JDK EA build for testing'
+
+inputs:
+  java-version:
+    description: 'Java version to use'
+    required: false
+    default: ''
+
+runs:
+  using: 'composite'
+  steps:
+    - name: Set up GRAALVM_HOME with EA build
+      shell: bash
+      run: |
+        FILE_NAME="graalvm-jdk.tar.gz"
+        DOWNLOAD_URL=$(jq -r '(.download_base_url + (.files[] | select(.arch == "x64" and .platform == "linux") | .filename))' versions/latest-ea.json)
+        echo "Downloading '${DOWNLOAD_URL}'..."
+        pushd $HOME > /dev/null
+        curl --fail --silent --location --retry 3 --max-time 10 --output "${FILE_NAME}" --request GET "${DOWNLOAD_URL}"
+        tar xzf "${FILE_NAME}"
+        GRAALVM_HOME=$(find $(pwd) -type d -name "graalvm-jdk-*")
+        echo "GRAALVM_HOME=${GRAALVM_HOME}" >> ${GITHUB_ENV}
+        popd > /dev/null
+    - name: Set up JAVA_HOME
+      if: ${{ inputs.java-version }} != ''
+      uses: actions/setup-java@v4
+      with:
+        distribution: 'oracle'
+        java-version: '${{ inputs.java-version }}'
+  
