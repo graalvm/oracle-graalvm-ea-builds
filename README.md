@@ -24,5 +24,5 @@ Download an Oracle GraalVM Early Access build for your platform at [graalvm/orac
 ## Use in GitHub Actions
 
 The [GitHub Action for GraalVM](https://github.com/marketplace/actions/github-action-for-graalvm) supports Oracle GraalVM Early Access builds. 
-To set up the latest available Early Access build of Oracle GraalVM, set `java-version: 'latest-ea'` in your workflows.
+To set up the latest available Early Access build of Oracle GraalVM, set `java-version: 'latest-ea'` in your GitHub workflow.
 More information is available [here](https://github.com/marketplace/actions/github-action-for-graalvm#options).
