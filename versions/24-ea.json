@@ -1,35 +1,35 @@
 [
     {
-        "version": "24.0.0-ea.07",
-        "latest": true,
-        "download_base_url": "https://github.com/graalvm/oracle-graalvm-ea-builds/releases/download/jdk-24.0.0-ea.07/",
-        "files": [
-            {
-                "filename": "graalvm-jdk-24.0.0-ea.07_linux-aarch64_bin.tar.gz",
-                "arch": "aarch64",
-                "platform": "linux"
-            },
-            {
-                "filename": "graalvm-jdk-24.0.0-ea.07_linux-x64_bin.tar.gz",
-                "arch": "x64",
-                "platform": "linux"
-            },
-            {
-                "filename": "graalvm-jdk-24.0.0-ea.07_windows-x64_bin.zip",
-                "arch": "x64",
-                "platform": "windows"
-            },
-            {
-                "filename": "graalvm-jdk-24.0.0-ea.07_macos-aarch64_bin.tar.gz",
-                "arch": "aarch64",
-                "platform": "darwin"
-            },
-            {
-                "filename": "graalvm-jdk-24.0.0-ea.07_macos-x64_bin.tar.gz",
-                "arch": "x64",
-                "platform": "darwin"
-            }
-        ]
+    "version": "24.0.0-ea.07",
+    "latest": true,
+    "download_base_url": "https://github.com/graalvm/oracle-graalvm-ea-builds/releases/download/jdk-24.0.0-ea.07/",
+    "files": [
+        {
+            "filename": "graalvm-jdk-24.0.0-ea.07_linux-aarch64_bin.tar.gz",
+            "arch": "aarch64",
+            "platform": "linux"
+        },
+        {
+            "filename": "graalvm-jdk-24.0.0-ea.07_linux-x64_bin.tar.gz",
+            "arch": "x64",
+            "platform": "linux"
+        },
+        {
+            "filename": "graalvm-jdk-24.0.0-ea.07_windows-x64_bin.zip",
+            "arch": "x64",
+            "platform": "windows"
+        },
+        {
+            "filename": "graalvm-jdk-24.0.0-ea.07_macos-aarch64_bin.tar.gz",
+            "arch": "aarch64",
+            "platform": "darwin"
+        },
+        {
+            "filename": "graalvm-jdk-24.0.0-ea.07_macos-x64_bin.tar.gz",
+            "arch": "x64",
+            "platform": "darwin"
+        }
+    ]
     },
     {
     "version": "24.0.0-ea.06",
