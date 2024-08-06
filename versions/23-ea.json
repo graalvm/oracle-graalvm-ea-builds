@@ -1,7 +1,39 @@
 [
     {
-        "version": "23.0.0-ea.20",
+        "version": "23.0.0-ea.21",
         "latest": true,
+        "download_base_url": "https://github.com/graalvm/oracle-graalvm-ea-builds/releases/download/jdk-23.0.0-ea.21/",
+        "files": [
+            {
+                "filename": "graalvm-jdk-23.0.0-ea.21_linux-aarch64_bin.tar.gz",
+                "arch": "aarch64",
+                "platform": "linux"
+            },
+            {
+                "filename": "graalvm-jdk-23.0.0-ea.21_linux-x64_bin.tar.gz",
+                "arch": "x64",
+                "platform": "linux"
+            },
+            {
+                "filename": "graalvm-jdk-23.0.0-ea.21_windows-x64_bin.zip",
+                "arch": "x64",
+                "platform": "windows"
+            },
+            {
+                "filename": "graalvm-jdk-23.0.0-ea.21_macos-aarch64_bin.tar.gz",
+                "arch": "aarch64",
+                "platform": "darwin"
+            },
+            {
+                "filename": "graalvm-jdk-23.0.0-ea.21_macos-x64_bin.tar.gz",
+                "arch": "x64",
+                "platform": "darwin"
+            }
+        ]
+    },
+    {
+        "version": "23.0.0-ea.20",
+        "latest": false,
         "download_base_url": "https://github.com/graalvm/oracle-graalvm-ea-builds/releases/download/jdk-23.0.0-ea.20/",
         "files": [
             {
