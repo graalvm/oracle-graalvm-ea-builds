@@ -33,7 +33,7 @@
     },
     {
         "version": "24.0.0-ea.23",
-        "latest": true,
+        "latest": false,
         "download_base_url": "https://github.com/graalvm/oracle-graalvm-ea-builds/releases/download/jdk-24.0.0-ea.23/",
         "files": [
             {
