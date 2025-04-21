@@ -58,7 +58,7 @@ permissions:
 jobs:
   build-graalvm-and-spring:
     name: Native Tests
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-latest
     steps:
     - name: Checkout oracle/graal
       uses: actions/checkout@v4
