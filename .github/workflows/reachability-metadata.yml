@@ -58,7 +58,7 @@ permissions:
 jobs:
   populate-matrix:
     name: Populate matrix
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-latest
     outputs:
       matrix: ${{ steps.set-matrix.outputs.matrix }}
     steps:
