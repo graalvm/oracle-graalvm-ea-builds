@@ -1,29 +1,29 @@
 {
-    "version": "26.0.0-ea.01",
-    "download_base_url": "https://github.com/graalvm/oracle-graalvm-ea-builds/releases/download/jdk-26.0.0-ea.01/",
+    "version": "26.0.0-ea.02",
+    "download_base_url": "https://github.com/graalvm/oracle-graalvm-ea-builds/releases/download/jdk-26.0.0-ea.02/",
     "files": [
         {
-            "filename": "graalvm-jdk-26.0.0-ea.01_linux-aarch64_bin.tar.gz",
+            "filename": "graalvm-jdk-26.0.0-ea.02_linux-aarch64_bin.tar.gz",
             "arch": "aarch64",
             "platform": "linux"
         },
         {
-            "filename": "graalvm-jdk-26.0.0-ea.01_linux-x64_bin.tar.gz",
+            "filename": "graalvm-jdk-26.0.0-ea.02_linux-x64_bin.tar.gz",
             "arch": "x64",
             "platform": "linux"
         },
         {
-            "filename": "graalvm-jdk-26.0.0-ea.01_windows-x64_bin.zip",
+            "filename": "graalvm-jdk-26.0.0-ea.02_windows-x64_bin.zip",
             "arch": "x64",
             "platform": "windows"
         },
         {
-            "filename": "graalvm-jdk-26.0.0-ea.01_macos-aarch64_bin.tar.gz",
+            "filename": "graalvm-jdk-26.0.0-ea.02_macos-aarch64_bin.tar.gz",
             "arch": "aarch64",
             "platform": "darwin"
         },
         {
-            "filename": "graalvm-jdk-26.0.0-ea.01_macos-x64_bin.tar.gz",
+            "filename": "graalvm-jdk-26.0.0-ea.02_macos-x64_bin.tar.gz",
             "arch": "x64",
             "platform": "darwin"
         }
