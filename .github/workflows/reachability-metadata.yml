@@ -50,7 +50,7 @@ on:
 
 env:
   REACHABILITY_METADATA_PATH: ${{ github.workspace }}/graalvm-reachability-metadata
-  MINIMUM_METADATA_JAVA_VERSION: 17
+  MINIMUM_METADATA_JAVA_VERSION: 21
 
 permissions:
   contents: read # to fetch code (actions/checkout)
