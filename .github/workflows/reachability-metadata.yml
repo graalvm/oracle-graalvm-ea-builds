@@ -90,15 +90,15 @@ jobs:
     steps:
       - name: Checkout oracle-graalvm-ea-builds for setup-oracle-graalvm-ea-build
         uses: actions/checkout@v4
+      - name: Set up GraalVM JDK EA build
+        uses: ./.github/actions/setup-oracle-graalvm-ea-build
+        with:
+          java-version: ${{ env.MINIMUM_METADATA_JAVA_VERSION }}
       - name: "Checkout oracle/graalvm-reachability-metadata"
         uses: actions/checkout@v4
         with:
           repository: oracle/graalvm-reachability-metadata
           path: ${{ env.REACHABILITY_METADATA_PATH }}
-      - name: Set up GraalVM JDK EA build
-        uses: ./.github/actions/setup-oracle-graalvm-ea-build
-        with:
-          java-version: ${{ env.MINIMUM_METADATA_JAVA_VERSION }}
       - name: "Pull allowed docker images"
         run: |
           cd ${{ env.REACHABILITY_METADATA_PATH }}
