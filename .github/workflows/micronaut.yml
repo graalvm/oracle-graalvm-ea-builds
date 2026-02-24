@@ -63,7 +63,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout oracle/graal
-      uses: actions/checkout@v4
+      uses: actions/checkout@v6
     - name: Set up GraalVM JDK EA build
       uses: ./.github/actions/setup-oracle-graalvm-ea-build
       with:
@@ -75,7 +75,7 @@ jobs:
         cd demo
         ./gradlew nativeTest
     - name: Checkout micronaut-projects/micronaut-core
-      uses: actions/checkout@v4
+      uses: actions/checkout@v6
       with:
         repository: micronaut-projects/micronaut-core
         path: ${{ env.MICRONAUT_CORE_PATH }}
