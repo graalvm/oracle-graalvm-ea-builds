@@ -1,24 +1,24 @@
 {
-    "version": "25e1-25.0.1-ea.14",
-    "download_base_url": "https://github.com/graalvm/oracle-graalvm-ea-builds/releases/download/jdk-25e1-25.0.1-ea.14/",
+    "version": "25e1-25.0.2-ea.15",
+    "download_base_url": "https://github.com/graalvm/oracle-graalvm-ea-builds/releases/download/jdk-25e1-25.0.2-ea.15/",
     "files": [
         {
-            "filename": "graalvm-jdk-25e1-25.0.1-ea.14_linux-aarch64_bin.tar.gz",
+            "filename": "graalvm-jdk-25e1-25.0.2-ea.15_linux-aarch64_bin.tar.gz",
             "arch": "aarch64",
             "platform": "linux"
         },
         {
-            "filename": "graalvm-jdk-25e1-25.0.1-ea.14_linux-x64_bin.tar.gz",
+            "filename": "graalvm-jdk-25e1-25.0.2-ea.15_linux-x64_bin.tar.gz",
             "arch": "x64",
             "platform": "linux"
         },
         {
-            "filename": "graalvm-jdk-25e1-25.0.1-ea.14_windows-x64_bin.zip",
+            "filename": "graalvm-jdk-25e1-25.0.2-ea.15_windows-x64_bin.zip",
             "arch": "x64",
             "platform": "windows"
         },
         {
-            "filename": "graalvm-jdk-25e1-25.0.1-ea.14_macos-aarch64_bin.tar.gz",
+            "filename": "graalvm-jdk-25e1-25.0.2-ea.15_macos-aarch64_bin.tar.gz",
             "arch": "aarch64",
             "platform": "darwin"
         }
