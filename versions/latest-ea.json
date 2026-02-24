@@ -21,11 +21,6 @@
             "filename": "graalvm-jdk-25e1-25.0.1-ea.14_macos-aarch64_bin.tar.gz",
             "arch": "aarch64",
             "platform": "darwin"
-        },
-        {
-            "filename": "graalvm-jdk-25e1-25.0.1-ea.14_macos-x64_bin.tar.gz",
-            "arch": "x64",
-            "platform": "darwin"
         }
     ]
 }
