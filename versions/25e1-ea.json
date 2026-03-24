@@ -28,7 +28,7 @@
     },
     {
         "version": "25e1-25.0.2-ea.17",
-        "latest": true,
+        "latest": false,
         "download_base_url": "https://github.com/graalvm/oracle-graalvm-ea-builds/releases/download/jdk-25e1-25.0.2-ea.17/",
         "files": [
             {
